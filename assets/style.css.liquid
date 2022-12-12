@@ -287,12 +287,16 @@ form {
 /* Swiper stuff */
 .store_page, .store_item {
   /* width: 200px;
-  height: auto;
-  z-index: 10; */
+  height: auto; */
+  /* z-index: -1; */
 }
 .front_page, .intro_item {
   width: 100%;
   z-index: 10;
+}
+.swiper div {
+  z-index: 999999;
+  background-color: red;
 }
 .product_page, .product_page_image {
   max-width: 100%;
@@ -331,6 +335,19 @@ form {
 
 .custom-shape-divider-bottom-1669434300 .shape-fill {
   fill: #5C5A5C;
+}
+
+@media screen and (min-width:1200px) {
+  body {
+    display: grid;
+    grid-template-rows: 3rem;
+  }
+  .index {
+    width: 1200px;
+    min-width: 0;
+    justify-self: center;
+  }
+
 }
 
 @media screen and (max-width: 1200px) {
